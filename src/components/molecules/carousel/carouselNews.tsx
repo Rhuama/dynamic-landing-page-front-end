@@ -19,6 +19,7 @@ export default function CarouselNews() {
         }}
         modules={[Pagination]}
         className="news"
+        id="news"
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
