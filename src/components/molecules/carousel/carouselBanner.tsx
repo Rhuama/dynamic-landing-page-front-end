@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -6,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./style/carouselBanner.css";
-import Image from "next/image";
+
 
 export default function CarouselBanner() {
   return (
@@ -18,6 +20,7 @@ export default function CarouselBanner() {
         pagination={{
           clickable: true,
         }}
+        modules={[Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>
