@@ -1,7 +1,8 @@
 'use client'
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
+import Image from "next/image";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,18 +19,18 @@ export default function CarouselNews() {
           clickable: true,
         }}
         modules={[Pagination]}
-        className="news"
+        className="mySwiper mb-9"
         id="news"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <a href="#">
+            {/* <Image src="/images/Kidsdress.jpg" width={150} height={50} alt={""} /> */}
+          </a>
+        </SwiperSlide>
+        <SwiperSlide><a href="#"></a></SwiperSlide>
+        <SwiperSlide><a href="#"></a></SwiperSlide>
+        <SwiperSlide><a href="#"></a></SwiperSlide>
+        <SwiperSlide><a href="#"></a></SwiperSlide>
       </Swiper>
     </>
   );
