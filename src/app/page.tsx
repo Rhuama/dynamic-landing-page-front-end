@@ -2,6 +2,7 @@ import Header from "@/components/organisms/header";
 import CarouselBanner from "@/components/molecules/carousel/carouselBanner"
 import Footer from "@/components/organisms/footer";
 import News from "@/components/organisms/news";
+import Whatsapp from "@/components/atoms/buttons/whatsapp";
 
 const API = {
   primaryColor100: "#ffccd0",
@@ -16,6 +17,7 @@ export default function Home() {
       <CarouselBanner/>
       <News primaryColor100={API.primaryColor100}/>
       <Footer />
+      <Whatsapp/>
     </>
   );
 }

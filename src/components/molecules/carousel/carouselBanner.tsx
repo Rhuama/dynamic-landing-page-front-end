@@ -12,7 +12,7 @@ import "./style/carouselBanner.css";
 
 export default function CarouselBanner() {
   return (
-    <section id="sectionOne">
+    <section id="carousel">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
